@@ -450,7 +450,7 @@ nav a.active {
     #boas-vindas {
         background-image: linear-gradient(rgba(205, 205, 205, 0.808), rgba(205, 205, 205, 0.808)), url(imgs/rvimg.jpg);
         background-position: center;
-        background-size: 170%;
+        background-size: 185%;
         position: relative;
         color: var(--text-color);
         overflow: hidden;
