@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICSVR - Inscrição</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    <div id="espaco"></div>
+    <header class="cabecalho">
+        <h1>ICSVR</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="programacao.html">Programação</a></li>
+                <li><a href="inscricao.html" class="active">Inscrição</a></li>
+                <li><a href="local.html">Local de Realização</a></li>
+                <li><a href="comissao.html">Comissão Organizadora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inscricao-form">
+            <h2>Formulário de Inscrição</h2>
+            <form id="form1" action="agradecimento.html" method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-nascimento">Data de Nascimento:</label>
+                        <input type="date" id="data-nascimento" name="data-nascimento" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Gênero:</label>
+                        <input type="radio" id="genero-m" name="genero" value="Masculino" required>
+                        <label for="genero-m">Masculino</label>
+                        <input type="radio" id="genero-f" name="genero" value="Feminino" required>
+                        <label for="genero-f">Feminino</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="pais">País de Origem:</label>
+                        <select id="pais" name="pais">
+                            <option value="Brasil">Brasil</option>
+                            <option value="EUA">Estados Unidos</option>
+                            <option value="Canada">Canadá</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferências</legend>
+                    <div class="form-group">
+                        <label>Interesses:</label>
+                        <div>
+                        <input type="checkbox" id="workshop1" name="workshops[]" value="workshop1">
+                        <label for="workshop1">Workshop 1: Desenvolvendo Experiências Imersivas em VR</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="workshop2" name="workshops[]" value="workshop2">
+                        <label for="workshop2">Workshop 2: Aplicações de Realidade Virtual na Educação</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="workshop3" name="workshops[]" value="workshop3">
+                        <label for="workshop3">Workshop 3: Desenvolvimento de Jogos em Realidade Virtual</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="workshop4" name="Workshops[]" value="workshop4">
+                        <label for="workshop4">Workshop 4: Simulação de Arquitetura e Design em VR</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="workshop5" name="workshops[]" value="workshop5">
+                        <label for="workshop5">Workshop 5: Simulação Médica Avançada</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="workshop6" name="workshops[]" value="workshop6">
+                        <label for="workshop6">Workshop 6: Design de Interfaces para VR</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="minicurso0" name="minicursos[]" value="minicurso0">
+                        <label for="minicurso0">Nenhum</label>
+                    </div>
+                    
+                </fieldset>
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+        </section>
+    </main>
+    <div style="height: 80px;"></div>
+    <footer>
+        <p>ICSVR &copy; Todos os direitos reservados.</p>
+        <p>Design por: Pedro Galhardo e Kaio Máximo</p>   
+     </footer>
+</div>
+</body>
+</html>
